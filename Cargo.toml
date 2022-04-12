@@ -1,0 +1,23 @@
+[package]
+name = "axum-jsonwebtoken"
+description = "axum extractors for JSON Web Tokens, powered by jsonwebtoken"
+version = "0.1.0"
+license = "MIT"
+repository = "https://github.com/wasdacraic/axum-jsonwebtoken/"
+edition = "2021"
+include = [
+  "LICENSE",
+  "README.md",
+  "Cargo.toml",
+  "**/*.rs",
+]
+
+[dependencies]
+axum = { version = "0.4.8", default-features = false }
+jsonwebtoken = "8.0.1"
+serde = "1.0.136"
+
+[dev-dependencies]
+hyper = "0.14.17"
+tokio = { version = "1.17.0", features = ["macros", "rt-multi-thread"] }
+tower = "0.4.12"
